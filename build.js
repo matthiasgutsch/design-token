@@ -11,20 +11,20 @@ function getStyleDictionaryConfig(brand) {
         "platforms": {
           "base": {
             "transformGroup": "scss",
-            "buildPath": "src/assets/",
+            "buildPath": `src/assets/${brand}/`,
             "files": [
               {
-                "destination": "default.scss",
+                "destination": "styles.scss",
                 "format": "scss/variables",
               }
             ]
           },
           "flint": {
             "transformGroup": "scss",
-            "buildPath": "src/assets/flint/",
+            "buildPath": `src/assets/${brand}/`,
             "files": [
               {
-                "destination": "colors.scss",
+                "destination": "styles.scss",
                 "format": "scss/variables",
               }
             ]
@@ -34,7 +34,7 @@ function getStyleDictionaryConfig(brand) {
             "buildPath": `src/assets/${brand}/`,
             "files": [
               {
-                "destination": "colors.scss",
+                "destination": "styles.scss",
                 "format": "scss/variables",
               }
             ]
