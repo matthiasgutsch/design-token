@@ -2,29 +2,26 @@ const StyleDictionaryPackage = require('style-dictionary');
 
 // HAVE THE STYLE DICTIONARY CONFIG DYNAMICALLY GENERATED
 
-function getStyleDictionaryConfig(brand, platform) {
+function getStyleDictionaryConfig(brand) {
     return {
 
-        "source": [`src/brands/${brand}/*.json`],
+        "source": [
+            `src/brands/${brand}/*.json`, 
+            "src/globals/**/*.json",],
         "platforms": {
           "base": {
             "transformGroup": "scss",
             "buildPath": "src/assets/",
-            "prefix": `${brand}/`,
             "files": [
               {
-                "destination": "dimension.scss",
+                "destination": "default.scss",
                 "format": "scss/variables",
-                "filter": {
-                  "type": "dimension"
-                }
               }
             ]
           },
           "flint": {
             "transformGroup": "scss",
             "buildPath": "src/assets/flint/",
-            "prefix": `${brand}/`,
             "files": [
               {
                 "destination": "colors.scss",
@@ -38,7 +35,6 @@ function getStyleDictionaryConfig(brand, platform) {
           "datacolor": {
             "transformGroup": "scss",
             "buildPath": `src/assets/${brand}/`,
-            "prefix": `${brand}/`,
             "files": [
               {
                 "destination": "colors.scss",
