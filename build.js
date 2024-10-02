@@ -26,9 +26,6 @@ function getStyleDictionaryConfig(brand) {
               {
                 "destination": "colors.scss",
                 "format": "scss/variables",
-                "filter": {
-                  "type": "color"
-                }
               }
             ]
           },
@@ -39,9 +36,6 @@ function getStyleDictionaryConfig(brand) {
               {
                 "destination": "colors.scss",
                 "format": "scss/variables",
-                "filter": {
-                  "type": "color"
-                }
               }
             ]
           }
