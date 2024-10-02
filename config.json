@@ -1,0 +1,50 @@
+{
+  "source": ["tokens/**/*.json"],
+  "platforms": {
+    "base": {
+      "transformGroup": "scss",
+      "buildPath": "src/assets/",
+      "source": ["tokens/**/*.json"],
+      "prefix": "dc",
+      "files": [
+        {
+          "destination": "dimension.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "dimension"
+          }
+        }
+      ]
+    },
+    "flint": {
+      "transformGroup": "scss",
+      "buildPath": "src/assets/flint/",
+      "source": ["tokens/**/*.json"],
+      "prefix": "flint",
+      "files": [
+        {
+          "destination": "colors.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "color"
+          }
+        }
+      ]
+    },
+    "datacolor": {
+      "transformGroup": "scss",
+      "buildPath": "src/assets/datacolor/",
+      "prefix": "datacolor",
+      "source": ["tokens/**/*.json"],
+      "files": [
+        {
+          "destination": "colors.scss",
+          "format": "scss/variables",
+          "filter": {
+            "type": "color"
+          }
+        }
+      ]
+    }
+  }
+}
