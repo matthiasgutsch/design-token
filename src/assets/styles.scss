@@ -1,5 +1,6 @@
 @import 'datacolor/styles';
 
 body {
-    background-color: $alias-color-brand-primary;
+    background-color: $color-primary;
+    padding: $dimension-xs;
 }
