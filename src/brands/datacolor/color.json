@@ -11,6 +11,12 @@
                     "type": "color"
                 }
             }
-        }
+        },
+        "dimension": {
+            "xs": {
+                "value": "4",
+                "type": "dimension"
+            }
+         }
     }
 }

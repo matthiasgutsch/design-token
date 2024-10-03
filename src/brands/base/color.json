@@ -13,6 +13,12 @@
                     "comment": "this one is a comment too"
                 }
             }
+        },
+        "dimension": {
+                "xs": {
+                    "value": "6",
+                    "type": "dimension"
+                }
         }
     }
   }
