@@ -16,7 +16,7 @@
         },
         "dimension": {
                 "xs": {
-                    "value": "6",
+                    "value": "16",
                     "type": "dimension"
                 }
         }
