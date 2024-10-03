@@ -6,12 +6,12 @@ export const storageKey = "theme";
   providedIn: "root",
 })
 export class ThemeService {
-  #path: string = "/assets/themes";
+  #path: string = "/assets";
   #stylesheet: HTMLLinkElement | null = document.getElementById(
     "theme"
   ) as HTMLLinkElement;
 
-  themeSignal: WritableSignal<string> = signal<string>("light");
+  themeSignal: WritableSignal<string> = signal<string>("datacolor");
 
   constructor() {
     this.initializeThemeFromPreferences();
@@ -23,7 +23,7 @@ export class ThemeService {
 
   toggleTheme(): void {
     this.themeSignal.update((prev) =>
-      this.isDarkThemeActive() ? "light" : "dark"
+      this.isDarkThemeActive() ? "datacolor" : "flint"
     );
   }
 
@@ -48,16 +48,16 @@ export class ThemeService {
   }
 
   getToggleLabel(): string {
-    return `Switch to ${this.isDarkThemeActive() ? "light" : "dark"} mode`;
+    return `Switch to ${this.isDarkThemeActive() ? "datacolor" : "flint"} mode`;
   }
 
   isDarkThemeActive(): boolean {
-    return this.themeSignal() === "dark" ? true : false;
+    return this.themeSignal() === "flint" ? true : false;
   }
 
   private updateRenderedTheme(): void {
     if (this.#stylesheet) {
-      this.#stylesheet.href = `${this.#path}/${this.themeSignal()}.css`;
+      this.#stylesheet.href = `${this.#path}/${this.themeSignal()}/styles.css`;
     }
 
     localStorage.setItem(storageKey, this.themeSignal());

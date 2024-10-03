@@ -22,7 +22,7 @@ function getStyleDictionaryConfig(brand) {
         files: [
           {
             destination: "styles.scss",
-            format: "scss/variables",
+            format: "css/variables",
           },
         ],
       },
