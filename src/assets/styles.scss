@@ -10,6 +10,6 @@ body {
     background-color: $color-primary;
     display: inline-block;
     border-radius: $border-radius-sm;
-    padding: $dimension-xs;
+    padding: $dimension-xs * 2;
     color: white;
 }
