@@ -62,3 +62,4 @@ function getStyleDictionaryConfig(brand) {
 
 console.log("\n==============================================");
 console.log("\nBuild completed!");
+
