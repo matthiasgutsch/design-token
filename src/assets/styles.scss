@@ -1,6 +1,15 @@
 @import 'datacolor/styles';
 
 body {
-    background-color: $color-primary;
+    background-color: white;
     padding: $dimension-xs;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dcui-button {
+    background-color: $color-primary;
+    display: inline-block;
+    border-radius: $border-radius-sm;
+    padding: $dimension-xs;
+    color: white;
 }
