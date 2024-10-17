@@ -13,11 +13,11 @@
       }
     },
 
-  "borderRadius": {
-    "radius-sm": {
-      "value": "4px",
-      "type": "borderRadius"
+    "borderRadius": {
+      "radius-sm": {
+        "value": "20px",
+        "type": "borderRadius"
+      }
     }
   }
-}
 }

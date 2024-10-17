@@ -1,4 +1,4 @@
-@import 'datacolor/styles';
+@import 'flint/styles';
 
 body {
     background-color: white;
@@ -10,6 +10,7 @@ body {
     background-color: $primary;
     display: inline-block;
     color: white;
+    border-radius: $radius-sm;
     padding: $sm;
 }
 
