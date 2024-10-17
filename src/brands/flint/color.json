@@ -1,22 +1,23 @@
 {
-    "alias": {
-        "color": {
-            "brand": {
-                "primary": {
-                    "value": "#1DA1F2",
-                    "type": "color"
-                },
-                "secondary": {
-                    "value": "#AAB8C2",
-                    "type": "color"
-                }
-            }
-        },
-        "dimension": {
-            "xs": {
-                "value": "12",
-                "type": "dimension"
-            }
+  "alias": {
+    "color": {
+      "primary": {
+        "value": "#4eb1c3",
+        "type": "color"
+      }
+    },
+    "spacing": {
+      "sm": {
+        "value": "40px",
+        "type": "spacing"
+      }
+    },
+
+  "borderRadius": {
+    "radius-sm": {
+      "value": "4px",
+      "type": "borderRadius"
     }
-    }
+  }
+}
 }

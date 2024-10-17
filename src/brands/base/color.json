@@ -1,24 +1,22 @@
 {
-    "alias": {
-        "color": {
-            "brand": {
-                "primary": {
-                    "value": "#3B5998",
-                    "type": "color",
-                    "comment": "this is a comment"
-                },
-                "secondary": {
-                    "value": "#4267B2",
-                    "type": "color",
-                    "comment": "this one is a comment too"
-                }
-            }
-        },
-        "dimension": {
-                "xs": {
-                    "value": "8",
-                    "type": "dimension"
-                }
-        }
+  "alias": {
+    "color": {
+      "primary": {
+        "value": "#d67c7c",
+        "type": "color"
+      }
+    },
+    "spacing": {
+      "sm": {
+        "value": "20px",
+        "type": "spacing"
+      }
+    },
+    "borderRadius": {
+      "radius-sm": {
+        "value": "4px",
+        "type": "borderRadius"
+      }
     }
   }
+}
